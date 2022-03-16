@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+
+        android:id="@+id/nav_home"
+        android:title=""
+        android:icon="@drawable/ic_home"
+        />
+
+    <item
+
+        android:id="@+id/nav_arama"
+        android:title=""
+        android:icon="@drawable/ic_arama"
+        />
+
+
+    <item
+
+        android:id="@+id/nav_ekle"
+        android:title=""
+        android:icon="@drawable/ic_ekle"
+        />
+
+    <item
+
+        android:id="@+id/nav_kalp"
+        android:title=""
+        android:icon="@drawable/ic_kalp"
+        />
+
+    <item
+
+        android:id="@+id/nav_profil"
+        android:title=""
+        android:icon="@drawable/ic_profil"
+        />
+
+
+</menu>

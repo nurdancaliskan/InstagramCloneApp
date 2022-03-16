@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YorumlarActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_yorumlarActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyler_view_yorumalarActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_Relative_yorumlarActivity"
+        android:layout_below="@+id/toolbar_yorumlarActivity"></androidx.recyclerview.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_Relative_yorumlarActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="4dp"
+        android:layout_alignParentBottom="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profil_resmi_yorumlarActivity"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <EditText
+            android:id="@+id/edt_yorumEkle_yorumlarActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/profil_resmi_yorumlarActivity"
+            android:hint="Bir yorum ekleyin.."
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toLeftOf="@id/txt_gonder_yorumlarActivity"/>
+
+        <TextView
+            android:id="@+id/txt_gonder_yorumlarActivity"
+            android:layout_alignParentEnd="true"
+            android:text="GÖNDER"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#82B1FF"
+            android:textStyle="bold
+"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

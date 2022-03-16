@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profil_resmi_Gonderi_Ogesi"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/txt_kullaniciadi_Gonderi_Ogesi"
+                android:text="Kullanıcı Adı"
+                android:textStyle="normal"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/gonderi_resmi_Gonderi_ogesi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:src="@mipmap/ic_launcher"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            tools:ignore="ExtraText">
+
+            <ImageView
+                android:id="@+id/begeni_Gonderi_Ogesi"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_like" />
+
+            <ImageView
+                android:id="@+id/yorum_Gonderi_Ogesi"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/begeni_Gonderi_Ogesi"
+                android:src="@drawable/ic_yorum" />
+
+            <ImageView
+                android:id="@+id/kaydetme_Ogesi"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_kaydet" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_begeniler_Gonderi_Ogesi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 beğeni"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/txt_gonderen_Gonderi_Ogesi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nurdan Çalışkan"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/txt_gonderiHakkinda_Gonderi_Ogesi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gönderi hakkında"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:textStyle="normal"/>
+        <TextView
+            android:id="@+id/txt_yorum_Gonderi_Ogesi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="20 yorumun hepsini gör"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="5dp"
+            android:textColor="#6D696A"
+            android:textStyle="normal"/>
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
